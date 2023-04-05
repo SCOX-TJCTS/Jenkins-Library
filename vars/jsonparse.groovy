@@ -7,3 +7,4 @@ def call() {
     def job = json.get(env.JOB_NAME)
 
   println job.profile
+}
