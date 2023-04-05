@@ -1,5 +1,6 @@
+def call(Map props = [:]) {
+	props = [ sleep: 5, maxWait: 300 ] << props
 
-def call(){
-
-println 'Take the node up in the f5'
+	println "taking ${props.target} out of service"
+	
 }
