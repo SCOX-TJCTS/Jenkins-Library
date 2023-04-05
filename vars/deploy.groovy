@@ -9,7 +9,7 @@ def call(Map props = [:]) {
 	job.targets.each { target ->
 
 		if (target.f5 != null) {
-			f5Down(target: targets.f5)
+			f5Down(target: target.f5)
 		}
 
 		if (job.type == 'SPRING_BOOT_LEGACY') {
