@@ -1,0 +1,11 @@
+{
+	"json parse test": {
+		"targets": [
+			{ "ssh": "abc", "f5": "123" },
+			{ "ssh": "def", "f5": "456" }
+		],
+		"profile": "test",
+		"type": "SPRING_BOOT",
+	  }
+
+}
