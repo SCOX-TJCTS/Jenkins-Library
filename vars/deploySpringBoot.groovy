@@ -6,7 +6,6 @@ def call(Map props = [:]) {
     def json = new JsonSlurperClassic().parseText(raw)
     def job = json.get(env.JOB_NAME)
 
-    return
     echo "Deploying artifact for ${job.profile}"
     echo "Deploying to server: ${job.target}"
     
