@@ -7,6 +7,6 @@ def call(Map props = [:]) {
     def job = json.get(env.JOB_NAME)
 
     echo "Deploying artifact for ${job.profile}"
-    echo "Deploying to server: ${target}"
+    echo "Deploying to server: ${props.target}"
     
     }
