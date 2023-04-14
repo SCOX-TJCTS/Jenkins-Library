@@ -13,13 +13,13 @@ def call(Map props = [:]) {
 		}
 
 		if (job.type == 'SPRING_BOOT_LEGACY') {
-			deploySpringBootLegacy(target: target.ssh)
+			deploySpringBootLegacy(target: target.ssh, profile: job.profile)
 		}
 		else if (job.type == 'SPRING_BOOT') {
 			deploySpringBoot(target: target.ssh, profile: job.profile)
 		}
 		else if (job.type == 'TOMCAT') {
-			deployTomcat(target: target.ssh)
+			deployTomcat(target: target.ssh, profile: job.profile)
 		}
 
 		if (target.f5 != null) {
