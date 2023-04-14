@@ -1,7 +1,21 @@
-def call(Map props = [:]) {
-def server = props.target
-    props = [ appName: 'springboot-app'] << props
+import groovy.json.JsonSlurperClassic
 
+def call(Map props = [:]) {
+    
+def raw = libraryResource 'job-configuration.json'
+def json = new JsonSlurperClassic().parseText(raw)
+def job = json.get(env.JOB_NAME)
+    
+def server = props.target
+    
+    
+    
+    if (job.appName = null){
+       props = [ appName: 'springboot-app'] << props
+        }
+    else if (job.appName != null){
+        props = job.appName
+        }
 
 
     echo "Deploying artifact for ${props.profile}"
