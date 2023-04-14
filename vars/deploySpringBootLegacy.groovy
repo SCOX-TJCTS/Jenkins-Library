@@ -1,6 +1,7 @@
 import groovy.json.JsonSlurperClassic
 
 def call(Map props = [:]) {
+    props = [ APP_NAME: 'springboot-app'] << props
 
     def raw = libraryResource 'configuration.json'
     def json = new JsonSlurperClassic().parseText(raw)
@@ -9,4 +10,5 @@ def call(Map props = [:]) {
     return
     echo "Deploying artifact for ${props.profile}"
     echo "Deploying to server: ${props.targets}"
+    echo "The application name is ${props.APP_NAME}"
     }
