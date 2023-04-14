@@ -5,7 +5,7 @@
 			{ "ssh": "def", "f5": "456"}
 		],
 		"profile": "prod",
-		"appName": "iro-app"
+		"appName": "iro-app",
 		"type": "SPRING_BOOT_LEGACY"
 	  },
 	"JSON parse test": {
