@@ -14,7 +14,7 @@ def server = props.target
        props = [ appName: 'springboot-app'] << props
         }
     else if (job.appName != null){
-        props = job.appName.toString()
+       props = [ appName: job.appName] << props
         }
 
 
