@@ -5,6 +5,6 @@ def server = props.target
 
 
     echo "Deploying artifact for ${props.profile}"
-    echo "Deploying to server: ${props.targets}"
+    echo "Deploying to server: ${props.target}"
     echo "The application name is ${props.APP_NAME}"
     }
