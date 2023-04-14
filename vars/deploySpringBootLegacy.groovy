@@ -1,11 +1,7 @@
-import groovy.json.JsonSlurperClassic
-
 def call(Map props = [:]) {
+def server = props.target
     props = [ APP_NAME: 'springboot-app'] << props
 
-    def raw = libraryResource 'configuration.json'
-    def json = new JsonSlurperClassic().parseText(raw)
-    def job = json.get(env.JOB_NAME)
 
     return
     echo "Deploying artifact for ${props.profile}"
