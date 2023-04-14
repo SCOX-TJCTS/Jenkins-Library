@@ -1,5 +1,5 @@
 {
-	"JSON parse test": {
+	"JSON parse test1": {
 		"targets": [
 			{ "ssh": "abc", "f5": "123"},
 			{ "ssh": "def", "f5": "456"}
@@ -8,7 +8,7 @@
 		"appName": "iro-app",
 		"type": "SPRING_BOOT_LEGACY"
 	  },
-	"JSON parse test1": {
+	"JSON parse test": {
 		"targets": [
 			{ "ssh": "ghi", "f5": "789"},
 			{ "ssh": "jkl", "f5": "321"}
