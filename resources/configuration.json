@@ -5,7 +5,7 @@
 			{ "ssh": "def", "f5": "456" }
 		],
 		"profile": "prod",
-		"type": "SPRING_BOOT"
+		"type": "SPRING_BOOT_LEGACY"
 	  }
 
 }
