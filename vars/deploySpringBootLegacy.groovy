@@ -10,7 +10,7 @@ def server = props.target
     
     
     
-    if (job.appName = null){
+    if (job.appName == null){
        props = [ appName: 'springboot-app'] << props
         }
     else if (job.appName != null){
