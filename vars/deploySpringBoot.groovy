@@ -7,7 +7,7 @@ def call(Map props = [:]) {
     
     
     echo "${props.profile}"
-    echo "Deploying to server: ${props.target}"
-    echo "The artifact is named: ${props.artifact}"
-    echo "The application name is ${props.appName}"
+    echo "${props.target}"
+    echo "${props.artifact}"
+    echo "${props.appName}"
     }
