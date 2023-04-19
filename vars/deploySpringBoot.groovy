@@ -1,5 +1,9 @@
 def call(Map props = [:]) {
-    props = [ profile: "test", artifact:"ROOT.jar", appName:"springBoot-app"] << props
+    props = [ profile: "test", appName:"springBoot-app"] << props
+    
+    if props.artifact == null{
+        props.artifact == "ROOT.jar"
+    }
     
     
     echo "${props.profile}"
