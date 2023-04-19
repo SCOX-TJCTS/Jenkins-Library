@@ -6,6 +6,7 @@
 		],
 		"appName": "iro-app",
 		"profile": "prod",
+		"artifact": "Test.jar", 
 		"type": "SPRING_BOOT"
 	  },
 	"JSON parse test2": {
