@@ -9,6 +9,6 @@ def call(Map props = [:]) {
     echo "${props.profile}"
     echo "${props.target}"
     echo "${props.artifact}"
-    echo $artifact
+    echo "$artifact"
     echo "${props.appName}"
     }
