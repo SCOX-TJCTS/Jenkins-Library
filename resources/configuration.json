@@ -6,6 +6,7 @@
 		],
 		"appName": "iro-app",
 		"profile": "prod",
+		"artifact": "rto-eventbroker.jar"
 		"type": "SPRING_BOOT"
 	  },
 	"JSON parse test2": {
