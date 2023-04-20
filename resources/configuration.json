@@ -5,7 +5,7 @@
 			{ "ssh": "def", "f5": "456"}
 		],
 		"appName": "iro-app",
-		"artifact": "opus-v1"
+		"artifact": "opus-v1",
 		"profile": "prod",
 		"type": "SPRING_BOOT"
 	  },
