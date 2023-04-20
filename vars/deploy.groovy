@@ -17,7 +17,6 @@ def call(Map props = [:]) {
 		}
 		else if (job.type == 'SPRING_BOOT') {
 			deploySpringBoot(target: target.ssh, profile: job.profile, artifact: job.artifact, appName:job.appName)
-			props = [ profile: 'test', artifact: 'ROOT', appName: 'springboot-app'] << props
 		}
 		else if (job.type == 'TOMCAT') {
 			deployTomcat(target: target.ssh, profile: job.profile)
