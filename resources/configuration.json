@@ -14,7 +14,7 @@
 			{ "ssh": "jkl", "f5": "321"}
 		],
 		"profile": "prod",
-		"type": "SPRING_BOOT_LEGACY"
+		"type": "SPRING_BOOT"
 	  }
 
 }
