@@ -3,8 +3,8 @@ def call(Map props = [:]) {
     
   
     
-    echo "${props.profile}"
-    echo "${props.target}"
-    echo "${props.artifact}.jar"
-    echo "${props.appName}"
+    echo "Profile: ${props.profile}"
+    echo "Target: ${props.target}"
+    echo "Artifact: ${props.artifact}.jar"
+    echo "AppName: ${props.appName}"
     }
