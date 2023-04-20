@@ -5,15 +5,17 @@
 			{ "ssh": "def", "f5": "456"}
 		],
 		"appName": "iro-app",
+		"artifact": "opus-v1"
 		"profile": "prod",
 		"type": "SPRING_BOOT"
 	  },
+	
+	
 	"JSON parse test2": {
 		"targets": [
 			{ "ssh": "ghi", "f5": "789"},
 			{ "ssh": "jkl", "f5": "321"}
 		],
-		"profile": "prod",
 		"type": "SPRING_BOOT"
 	  }
 
