@@ -16,7 +16,7 @@ def call(Map props = [:]) {
 			deploySpringBootLegacy(target: target.ssh, profile: job.profile)
 		}
 		else if (job.type == 'SPRING_BOOT') {
-			deploySpringBoot(target: target.ssh, profile: job.profile, artifact: job.artifact)
+			deploySpringBoot(target: target.ssh, profile: job.profile, artifact: job.artifact, appName:job.appName)
 		}
 		else if (job.type == 'TOMCAT') {
 			deployTomcat(target: target.ssh, profile: job.profile)
