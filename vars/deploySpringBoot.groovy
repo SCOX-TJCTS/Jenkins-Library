@@ -1,10 +1,7 @@
 def call(Map props = [:]) {
-    props = [ profile: "test", appName:"springBoot-app"] << props
+    props = [ profile: "test", appName: "springBoot-app", artifact: "ROOT"] << props
     
-    if (props.artifact == null){
-        props.artifact = "ROOT"
-    }
-    
+  
     
     echo "${props.profile}"
     echo "${props.target}"
