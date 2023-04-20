@@ -6,7 +6,7 @@ def call(Map props = [:]) {
     }
     
     if (props.appName == null){
-        props.artifact = "springboot-app"
+        props.appName = "springboot-app"
     }
     
   
