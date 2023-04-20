@@ -1,5 +1,5 @@
 def call(Map props = [:]) {
-    props = [ profile: test, artifact: ROOT, appName: springboot-app] << props
+    props = [ profile: 'test', artifact: 'ROOT', appName: 'springboot-app'] << props
     
  
     
