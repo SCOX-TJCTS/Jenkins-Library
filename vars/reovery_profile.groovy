@@ -6,6 +6,6 @@ def call(Map props = [:]) {
 	def job = json.get(env.JOB_NAME)
 	
 	if (job.recovery != null) {
-			build job: job.recovery, wait: true
+			build job: job.recovery, wait: false
 		}
 }
