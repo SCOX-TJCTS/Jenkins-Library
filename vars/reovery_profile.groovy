@@ -9,3 +9,4 @@ def call(Map props = [:]) {
 	if (job.recovery != null) {
 			build job: job.recovery, wait: true
 		}
+}
