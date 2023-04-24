@@ -7,7 +7,8 @@
 		"appName": "iro-app",
 		"artifact": "opus-v1",
 		"profile": "prod",
-		"type": "SPRING_BOOT"
+		"type": "SPRING_BOOT",
+		"recovery": "JSON parse test2"
 	  },
 	
 	
